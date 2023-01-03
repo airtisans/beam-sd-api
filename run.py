@@ -23,6 +23,7 @@ def generate_image(**inputs):
     with autocast("cuda"):
         image = pipe(prompt, guidance_scale=7.5).images[0]
         image.save("output.png")
+        print("completed generation")
 
 
 if __name__ == "__main__":
