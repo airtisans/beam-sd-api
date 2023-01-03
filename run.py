@@ -14,7 +14,7 @@ def generate_image(**inputs):
     pipe = StableDiffusionPipeline.from_pretrained(
         "caseycollins/SD-diffuser-icons",
         torch_dtype=torch.float16,
-        revision="fp16",
+        revision="main",
         use_auth_token=os.environ["HUGGINGFACE_API_KEY"],
     ).to("cuda")
 
