@@ -4,7 +4,7 @@ app = beam.App(
     name="stable-diffusion-video-example",
     cpu=4,
     gpu=1,
-    memory="16Gi",
+    memory="32Gi",
     python_version="python3.8",
     python_packages=["diffusers", "transformers", "torch", "pillow"],
 )
