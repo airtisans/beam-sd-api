@@ -24,8 +24,3 @@ def generate_image(**inputs):
         image = pipe(prompt, guidance_scale=7.5).images[0]
         image.save("output.png")
         print("completed generation")
-
-
-if __name__ == "__main__":
-    prompt = "a renaissance style portrait of steve jobs"
-    generate_image(prompt=prompt)

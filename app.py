@@ -6,7 +6,7 @@ app = beam.App(
     gpu=1,
     memory="32Gi",
     python_version="python3.8",
-    python_packages=["diffusers", "transformers", "torch", "pillow"],
+    python_packages=["diffusers", "transformers", "torch", "pillow", "accelerate"],
 )
 
 app.Trigger.Webhook(
