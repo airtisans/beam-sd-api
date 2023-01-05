@@ -27,7 +27,6 @@ def generate_image(**inputs):
 
     pipe = StableDiffusionPipeline.from_pretrained(
         model_id,
-        revision="fp16",
         torch_dtype=torch.float16,
         cache_dir=cache_path,
         scheduler=scheduler,
